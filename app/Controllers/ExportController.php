@@ -288,6 +288,8 @@ class ExportController extends Controller
             $data[$item->team->name]['yellows'] = $item->statistics[10]->value ?? 0;
             $data[$item->team->name]['reds'] = $item->statistics[11]->value ?? 0;
             $data[$item->team->name]['expected_goals'] = $item->statistics[16]->value ?? '-';
+            $data[$item->team->name]['passes'] = $item->statistics[13]->value ?? 0;
+            $data[$item->team->name]['successfulPasses'] = $item->statistics[14]->value ?? 0;
         }
 
         if (get('bolivia')) {
