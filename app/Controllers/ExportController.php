@@ -23,7 +23,7 @@ class ExportController extends Controller
     {
         $this->middleware('Auth');
         
-        if (auth()->role != 'admin') {
+        if (auth()->role != 'admin' && auth()->role != 'producer') {
             return abort(401);
         }
         
