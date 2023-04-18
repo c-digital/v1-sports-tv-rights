@@ -19,6 +19,9 @@ $route->auth();
 // Dashboard
 $route->get('/dashboard', [DashboardController::class, 'index']);
 
+$route->get('/bolivia/liga', [BoliviaController::class, 'liga']);
+$route->get('/bolivia/copa', [BoliviaController::class, 'copa']);
+
 $route->get('/españa/liga', [EspañaController::class, 'liga']);
 $route->get('/españa/copa', [EspañaController::class, 'copa']);
 

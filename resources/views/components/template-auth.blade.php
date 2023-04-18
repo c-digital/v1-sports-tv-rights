@@ -17,6 +17,19 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
+<style>
+    body {
+        background: url('{{ asset('img/fondo.jpg')  }}');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg-blue-tigo, .btn-blue-tigo {
+        background-color: #071029 !important;
+    }
+</style>
+
 </head>
 
 <body class="body-bg min-h-screen pt-12 md:pt-20 pb-2 px-2 md:px-0 bg-gray-100">
@@ -33,6 +46,10 @@
             {{ $slot }}
         </section>
     </main>
+
+    <footer class="text-white text-center mb-5">
+        <center>Powered by <img width="150px" src="https://sportstvrights.com/wp-content/uploads/2022/06/SPORTSTVRIGHTS-CON-BOCETO-BLANCO.png" alt=""></center>
+    </footer>
 </body>
 
 </html>
